@@ -1,0 +1,56 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif; /* Matches Google Font added in index.html */
+    background-color: #f4f6f8; /* Light Gray Background */
+    color: #2c3e50; /* Dark Gray Text */
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #3498db; /* Blue Links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #2874a6; /* Darker Blue on Hover */
+  }
+  
+  /* Button Reset */
+  button {
+    font-family: inherit;
+  }
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  

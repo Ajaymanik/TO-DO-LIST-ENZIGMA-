@@ -1,0 +1,82 @@
+/* General Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9fbfd; /* Light Blue-Gray Background */
+    border: 1px solid #d1e3f8; /* Subtle Blue Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #34495e; /* Dark Blue-Gray Text */
+    margin-bottom: 8px;
+  }
+  
+  /* Input and Textarea Styling */
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3c7e6; /* Light Blue Border */
+    border-radius: 5px;
+    background-color: #ffffff; /* White Background */
+    color: #2c3e50; /* Dark Gray Text */
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #5dade2; /* Bright Blue Focus Border */
+    box-shadow: 0 0 5px rgba(93, 173, 226, 0.5); /* Blue Glow */
+  }
+  
+  /* Button Styling */
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff; /* White Text */
+    background-color: #3498db; /* Blue Background */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2874a6; /* Darker Blue on Hover */
+    transform: scale(1.05); /* Slight Scale Effect */
+  }
+  
+  button:active {
+    background-color: #21618c; /* Even Darker Blue on Click */
+    transform: scale(1); /* Reset Scale */
+  }
+  
+  /* Cancel Button Styling */
+  button:nth-of-type(2) {
+    background-color: #e74c3c; /* Red Background */
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: #c0392b; /* Darker Red on Hover */
+  }
+  
+  button:nth-of-type(2):active {
+    background-color: #a93226; /* Even Darker Red on Click */
+  }
+  
+  /* Add Spacing Around Form */
+  div {
+    text-align: center;
+  }
+  

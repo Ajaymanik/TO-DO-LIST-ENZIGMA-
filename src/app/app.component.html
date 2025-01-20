@@ -1,0 +1,25 @@
+<header>
+  <h1>To-Do List Application</h1>
+</header>
+
+<main>
+  <!-- Task Form Section -->
+  <section class="task-form-section">
+    <app-task-form
+      [editTaskData]="selectedTask"
+      (taskUpdated)="refreshTaskList()"
+    ></app-task-form>
+  </section>
+
+  <!-- Task List Section -->
+  <section class="task-list-section">
+    <app-task-list
+      (taskToEdit)="handleEditTask($event)"
+      (taskDeleted)="refreshTaskList()"
+    ></app-task-list>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 To-Do List Application. All rights reserved.</p>
+</footer>

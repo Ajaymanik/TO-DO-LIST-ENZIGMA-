@@ -1,0 +1,26 @@
+<div class="task-list-container">
+    <h2 class="task-list-title">Your Tasks</h2>
+  
+    <!-- Check if there are tasks to display -->
+    <ul *ngIf="tasks.length > 0; else noTasks">
+      <li *ngFor="let task of tasks" class="task-item">
+        <!-- Task Details -->
+        <div class="task-content">
+          <h3 class="task-title">{{ task.title }}</h3>
+          <p class="task-description">{{ task.description }}</p>
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="edit-btn" (click)="editTask(task)">Edit</button>
+          <button class="delete-btn" (click)="deleteTask(task.id)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  
+    <!-- No Tasks Message -->
+    <ng-template #noTasks>
+      <p class="no-tasks-message">No tasks available. Please add a task!</p>
+    </ng-template>
+  </div>
+  

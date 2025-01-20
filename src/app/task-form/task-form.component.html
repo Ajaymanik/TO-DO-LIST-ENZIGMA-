@@ -1,0 +1,33 @@
+<div class="task-form-container">
+    <h2 class="form-title">{{ editTaskData ? 'Edit Task' : 'Add Task' }}</h2>
+    <form>
+      <!-- Title Input -->
+      <label for="title">Task Title</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="title"
+        name="title"
+        placeholder="Enter task title"
+        required
+      />
+  
+      <!-- Description Input -->
+      <label for="description">Task Description</label>
+      <textarea
+        id="description"
+        [(ngModel)]="description"
+        name="description"
+        placeholder="Enter task description"
+        rows="4"
+        required
+      ></textarea>
+  
+      <!-- Action Buttons -->
+      <div class="button-group">
+        <button type="button" (click)="saveTask()">Save</button>
+        <button type="button" (click)="resetForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,64 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8; /* Light Gray Background */
+    color: #2c3e50; /* Dark Text */
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #3498db; /* Blue Background */
+    color: #ffffff; /* White Text */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+  }
+  
+  /* Main Container Styling */
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White Background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #ecf0f1; /* Light Gray Footer Background */
+    color: #7f8c8d; /* Gray Text */
+    font-size: 14px;
+    border-top: 1px solid #dcdcdc;
+  }
+  
+  /* Utility Classes for Layout */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  
+    header {
+      font-size: 16px;
+      padding: 8px 0;
+    }
+  }
+  

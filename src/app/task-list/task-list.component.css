@@ -1,0 +1,97 @@
+/* Task List Container Styling */
+.task-list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9fbfd; /* Light Blue-Gray Background */
+    border: 1px solid #d1e3f8; /* Subtle Blue Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+  }
+  
+  /* Heading Styling */
+  .task-list-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #34495e; /* Dark Blue-Gray Text */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Task Item Styling */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White Background */
+    border: 1px solid #b3c7e6; /* Light Blue Border */
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Highlight shadow */
+  }
+  
+  /* Task Title and Description */
+  .task-content {
+    max-width: 70%;
+  }
+  
+  .task-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50; /* Dark Gray Text */
+    margin-bottom: 5px;
+  }
+  
+  .task-description {
+    font-size: 14px;
+    color: #7f8c8d; /* Subtle Gray */
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff; /* White Text */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05); /* Slight Scale Effect */
+  }
+  
+  button:active {
+    transform: scale(1); /* Reset Scale */
+  }
+  
+  /* Edit Button */
+  button.edit-btn {
+    background-color: #5dade2; /* Blue Background */
+  }
+  
+  button.edit-btn:hover {
+    background-color: #3498db; /* Darker Blue */
+  }
+  
+  /* Delete Button */
+  button.delete-btn {
+    background-color: #e74c3c; /* Red Background */
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c0392b; /* Darker Red */
+  }
+  
